@@ -9,7 +9,28 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Trivia</title>
 </head>
-<body>
-    
+<body class="trivia-body">
+    <div class="trivia-container">
+        <div class="opcion-retroceder">
+        <button><a href="categorias.html">Categorias</a></button>
+        </div>
+        <div class="trivia-opciones">
+        <select name="Dificultad" id="selectordificultad">
+        <option value="Facil">Facil</option>
+        <option value="Medio">Medio</option>
+        <option value="Dificil">Dificil</option>
+        </select>
+        <select name="Tiempo" id="selectortiempo">
+        <option value=20>20s</option>
+        <option value=60>1m</option>
+        <option value=60>2m</option>
+        </select>
+        </div>
+        <div class="trivia-selected">
+        <img src="../assets/images/3.png" alt="Logo 2" class="categoria-logo">
+        <span class="categoria-text">Juegos</span>
+        <button class="button-iniciar"><a href="" class="button-text">Iniciar</a></button>
+        </div>
+    </div>
 </body>
 </html>
