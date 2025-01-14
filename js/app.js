@@ -1,13 +1,14 @@
-function mostrarContenido(categoria) {
-    // Ocultar todos los contenidos
-    const contenidos = document.querySelectorAll('.categoria-contenido');
-    contenidos.forEach(contenido => {
-        contenido.style.display = 'none';
+document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const categoria = params.get("categoria");
+
+    // Mostrar solo el contenido seleccionado
+    document.querySelectorAll(".categoria-contenido").forEach(element => {
+        element.style.display = element.id === categoria ? "block" : "none";
     });
 
-    // Mostrar el contenido de la categoría seleccionada
-    const contenidoSeleccionado = document.getElementById(categoria);
-    if (contenidoSeleccionado) {
-        contenidoSeleccionado.style.display = 'block';
+    if (!categoria) {
+        alert("Categoría no encontrada.");
+        window.location.href = "categorias.html";
     }
-}
+});
