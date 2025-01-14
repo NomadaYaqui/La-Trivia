@@ -5,58 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Ranchers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Categorías</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Categorías - Trivia</title>
 </head>
 
 <body>
+    <h1>Seleccione tu categoría</h1>
     <div class="categoria-containers">
-        <div class="categoria" onclick="mostrarContenido('peliculas')">
-            <img src="../assets/images/2.png" alt="Peliculas" class="categoria-logo">
-            <span class="categoria-text">Peliculas</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=peliculas">
+                <img src="/assets/images/2.png" alt="Películas" class="categoria-logo">
+                <span class="categoria-text">Películas</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('juegos')">
-            <img src="../assets/images/3.png" alt="Juegos" class="categoria-logo">
-            <span class="categoria-text">Juegos</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=juegos">
+                <img src="/assets/images/3.png" alt="Juegos" class="categoria-logo">
+                <span class="categoria-text">Juegos</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('musica')">
-            <img src="../assets/images/4.png" alt="Musica" class="categoria-logo">
-            <span class="categoria-text">Musica</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=musica">
+                <img src="/assets/images/4.png" alt="Música" class="categoria-logo">
+                <span class="categoria-text">Música</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('deportes')">
-            <img src="../assets/images/5.png" alt="Deportes" class="categoria-logo">
-            <span class="categoria-text">Deportes</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=deportes">
+                <img src="/assets/images/5.png" alt="Deportes" class="categoria-logo">
+                <span class="categoria-text">Deportes</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('ciencia')">
-            <img src="../assets/images/6.png" alt="Ciencia" class="categoria-logo">
-            <span class="categoria-text">Ciencia</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=ciencia">
+                <img src="../assets/images/6.png" alt="Ciencia" class="categoria-logo">
+                <span class="categoria-text">Ciencia</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('series')">
-            <img src="../assets/images/7.png" alt="Series" class="categoria-logo">
-            <span class="categoria-text">Series</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=Series">
+                <img src="/assets/images/7.png" alt="Series" class="categoria-logo">
+                <span class="categoria-text">Series</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('historia')">
-            <img src="../assets/images/8.png" alt="Historia" class="categoria-logo">
-            <span class="categoria-text">Historia</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=Historia">
+                <img src="/assets/images/8.png" alt="Historia" class="categoria-logo">
+                <span class="categoria-text">Historia</span>
+            </a>
         </div>
-        <div class="categoria" onclick="mostrarContenido('animales')">
-            <img src="../assets/images/9.png" alt="Animales" class="categoria-logo">
-            <span class="categoria-text">Animales</span>
+        <div class="categoria">
+            <a href="contenido.html?categoria=Animales">
+                <img src="/assets/images/9.png" alt="Animales" class="categoria-logo">
+                <span class="categoria-text">Animales</span>
+            </a>
         </div>
     </div>
-
-    <div id="contenido" class="contenido">
-        <div id="peliculas" class="categoria-contenido">Contenido de Películas</div>
-        <div id="juegos" class="categoria-contenido">Contenido de Juegos</div>
-        <div id="musica" class="categoria-contenido">Contenido de Música</div>
-        <div id="deportes" class="categoria-contenido">Contenido de Deportes</div>
-        <div id="ciencia" class="categoria-contenido">Contenido de Ciencia</div>
-        <div id="series" class="categoria-contenido">Contenido de Series</div>
-        <div id="historia" class="categoria-contenido">Contenido de Historia</div>
-        <div id="animales" class="categoria-contenido">Contenido de Animales</div>
-    </div>
-
-    <script src="/js/app.js"></script>
 </body>
 
 </html>
