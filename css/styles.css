@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -13,16 +12,13 @@ body {
     background-position: top;
 }
 
-
 .container {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    flex-grow: 1;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
 }
 
 .iniciologo {
@@ -31,15 +27,11 @@ body {
     height: auto;
 }
 
-
 .button {
     cursor: pointer;
     background: none;
     border: none;
-
 }
-
-
 
 .button-text {
     font-family: "Bungee", serif;
@@ -49,24 +41,19 @@ body {
     -webkit-text-stroke: 0.5vw #000000;
 }
 
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        flex-direction: column;
     }
-
 
     .iniciologo {
         max-width: 80%;
     }
 
     .button-text {
-        font-size: auto;
+        font-size: 6vw;
+        /* Ajustado para mantener proporción en pantallas pequeñas */
         letter-spacing: 0;
-        -webkit-text-stroke: 0.5vw #000000;
-        letter-spacing: 0;
-        -webkit-text-stroke: 0.5vw #000000;
     }
 }
 
@@ -75,7 +62,6 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    justify-content: center;
     gap: 4vw;
     background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
     width: 100vw;
@@ -83,11 +69,9 @@ body {
     padding: 3.5vw;
 }
 
-
 .categoria {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: center;
     align-items: stretch;
     max-height: 50%;
@@ -98,13 +82,14 @@ body {
     text-align: center;
 }
 
-
-
 .categoria a {
     text-decoration: none;
 }
 
-
+.categoria a:hover {
+    text-decoration: underline;
+    /* Agregado para un estilo visual al pasar el cursor */
+}
 
 .categoria-text {
     font-size: calc(2vw + 20px);
@@ -113,18 +98,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-
-
 }
-
 
 .categoria-logo {
     background: none;
     width: 80%;
-    width: 80%;
     height: auto;
     margin-bottom: 10px;
 }
-
-/*background: linear-gradient(180deg, rgba(249,224,20,1) 35%, rgba(65,188,168,1) 100%);*/
-/* background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,240,45,1) 68%); */
