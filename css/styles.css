@@ -106,3 +106,29 @@ body {
     height: auto;
     margin-bottom: 10px;
 }
+
+
+/*para las categorias */
+
+.categoria-contenido {
+    display: none;
+}
+
+.categoria {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.categoria-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.categoria-text {
+    font-family: 'Bungee', sans-serif;
+    font-size: 20px;
+}
+
+#contenido {
+    margin-top: 20px;
+}
