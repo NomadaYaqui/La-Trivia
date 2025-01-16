@@ -29,20 +29,70 @@
 
 .opcion-retroceder{
     grid-area: back;
-    width: auto;
+    width: 100%;
     height: 20%;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
 }
+
+.button-retroceder {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text-retroceder{
+    font-family: "Ranchers", serif;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #9e5aff;
+    
+}
+
 .trivia-opciones {
     grid-area: options;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    align-items: self-end;
-    justify-content: center;
-    width: auto;
-    height: 40%;
-    justify-self: end;
+    align-content: center;
+    justify-content:right;
     border-radius: 10px;
+    gap: 10px;
+}
+
+.selector {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    background: #f8e015;
+    font-size: 3vw;
+    border-radius: 12px;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../assets/images/drop.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 10px;
+    
+
+}
+
+#selectortiempo{
+    width: 70%;
+}
+
+.selector:focus {
+    border: none;
 }
 
 .trivia-selected {
@@ -54,42 +104,42 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    gap: 10px;
+    gap: 20px;
 }
 
+
 .trivia-selected img {
-    width: 100%;  /* Ajusta la imagen al 100% del contenedor */
-    height: auto;  /* Mantiene la relación de aspecto */
-    max-width: 200px;  /* Limita el tamaño máximo */
-    max-height: 200px;  /* Limita el tamaño máximo */
+    width: 100%;  
+    height: auto;  
+    max-width: 200px;  
+    max-height: 200px; 
+}
+
+.button-iniciar-juego {
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+    background: #ff40bd;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .button-text-selected {
     font-family: "Bungee", serif;
     color: #41bca8;
-    font-size: 5dvh;
-    text-decoration: none;
-    letter-spacing: -4px;
+    height: 100%;
+    width: 25%;
+    font-size: 5vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.button-iniciar {
-    height: 18%;
-    width: 28%;
-    cursor: pointer;
-    background: #ff40bd;
-    border: none;
-    border-radius: 20px;
-}
 
-.button-options {
-    cursor: pointer;
-    font-family: "Ranchers", serif;
-    color: #9e5aff;
-    background: #f8e015;
-    font-size: 4vw;
-    border: none;
-    border-radius: 20px;
-    letter-spacing: -4px;
-}
+
 /*background: linear-gradient(180deg, rgba(249,224,20,1) 35%, rgba(65,188,168,1) 100%);*/
 /* background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,240,45,1) 68%); */
