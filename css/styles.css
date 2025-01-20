@@ -1,226 +1,3 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-
-body {
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
-    background-size: 100% 100%;
-    background-position: center;
-    align-items: center;
-    place-items: center;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.iniciologo {
-    background: none;
-    width: 35vw;
-    height: auto;
-}
-
-
-.button {
-    cursor: pointer;
-    background: none;
-    border: none;
-
-}
-
-
-
-.button-text {
-    font-family: "Bungee", serif;
-    color: #f9e014;
-    font-size: 6vw;
-    text-decoration: none;
-    -webkit-text-stroke: 0.5vw #000000;
-}
-
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        flex-direction: column;
-    }
-
-
-    .iniciologo {
-        max-width: 80%;
-    }
-
-    .button-text {
-        font-size: auto;
-        letter-spacing: 0;
-        -webkit-text-stroke: 0.5vw #000000;
-        letter-spacing: 0;
-        -webkit-text-stroke: 0.5vw #000000;
-    }
-}
-
-.categoria-containers {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    gap: 4vw;
-    background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
-    width: 100vw;
-    height: 100vh;
-    padding: 3.5vw;
-}
-
-
-.categoria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    max-height: 50%;
-    max-width: calc(20% - 20px);
-    background: white;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-
-
-.categoria a {
-    text-decoration: none;
-}
-
-
-
-.categoria-text {
-    font-size: calc(2vw + 20px);
-    font-family: "Ranchers", serif;
-    color: #9e5aff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-
-}
-
-
-.categoria-logo {
-    background: none;
-    width: 80%;
-    width: 80%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
-.trivia-body {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
-}
-
-.trivia-container {
-    width: 90%;
-    height: 80%;
-    display: grid;
-    grid-template-areas:
-        "back options"
-        "main main";
-    grid-template-columns: 25% auto;
-    grid-template-rows: 25% 55%;
-    background-color: white;
-    border-radius: 30px;
-    position: relative;
-    padding: 20px;
-}
-
-.opcion-retroceder {
-    grid-area: back;
-    width: auto;
-    height: 20%;
-    border-radius: 10px;
-}
-
-.trivia-opciones {
-    grid-area: options;
-    display: flex;
-    flex-direction: column;
-    align-items: self-end;
-    justify-content: center;
-    width: auto;
-    height: 40%;
-    justify-self: end;
-    border-radius: 10px;
-}
-
-.trivia-selected {
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    gap: 10px;
-}
-
-.trivia-selected img {
-    width: 100%;
-   
-    height: auto;
-  
-    max-width: 200px;
-    max-height: 200px;
- 
-}
-
-.button-text-selected {
-    font-family: "Bungee", serif;
-    color: #41bca8;
-    font-size: 5dvh;
-    text-decoration: none;
-    letter-spacing: -4px;
-}
-
-.button-iniciar {
-    height: 18%;
-    width: 28%;
-    cursor: pointer;
-    background: #ff40bd;
-    border: none;
-    border-radius: 20px;
-}
-
-.button-options {
-    cursor: pointer;
-    font-family: "Ranchers", serif;
-    color: #9e5aff;
-    background: #f8e015;
-    font-size: 4vw;
-    border: none;
-    border-radius: 20px;
-    letter-spacing: -4px;
-} */
-
 /* Estilos originales */
 * {
     padding: 0;
@@ -338,6 +115,27 @@ body {
     display: grid;
     place-items: center;
     background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
+    overflow: hidden;
+    /* Evitar desplazamiento de elementos fuera del contenedor */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Cambiar a columna */
+    }
 }
 
 .trivia-container {
@@ -349,18 +147,74 @@ body {
         "main main";
     grid-template-columns: 25% auto;
     grid-template-rows: 25% 55%;
-    /* background-color: white; */
     border-radius: 30px;
     position: relative;
-    /* padding: 20px; */
+    padding: 20px;
 }
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .trivia-container {
+        grid-template-columns: 1fr;
+        /* Hacer la columna más grande al 100% */
+        grid-template-areas:
+            "back"
+            "main"
+            "options";
+        /* Pone los selectores debajo del contenido */
+    }
+
+    .trivia-opciones {
+        position: relative;
+        /* Evitar la posición absoluta */
+        width: 100%;
+        top: 10px;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 .opcion-retroceder {
-    grid-area: back;
+    font-family: "Ranchers", serif;
     width: auto;
     height: 20%;
     border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+    .opcion-retroceder {
+        width: 100%;
+        /* Hacer que el botón ocupe todo el ancho */
+        text-align: center;
+        /* Asegurar que el texto esté centrado */
+        margin-top: 20px;
+    }
+}
+
+.opcion-retroceder a {
+    text-decoration: none;
+    font-family: "Ranchers", serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    color: inherit;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.opcion-retroceder:hover {
+    transform: scale(1.1);
+}
+
+.opcion-retroceder a:hover {
+    font-size: 1.4rem;
+}
+
 
 .trivia-opciones {
     grid-area: options;
@@ -395,7 +249,7 @@ body {
 
 .button-text-selected {
     font-family: "Bungee", serif;
-    color: #41bca8;
+    color: #4341bc;
     font-size: 5dvh;
     text-decoration: none;
     letter-spacing: -4px;
@@ -457,7 +311,7 @@ body {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #9e5aff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -466,6 +320,64 @@ button {
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: #45a049;
+.button-iniciar-juego {
+    height: auto;
+    width: auto;
+    padding: 15px 30px;
+    background: #ff40bd;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover */
+.button-iniciar-juego:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trivia-opciones {
+    position: absolute;
+    /* Usa posición absoluta para colocarlos donde quieras */
+    top: 10px;
+    /* Distancia desde la parte superior */
+    right: 10px;
+    /* Distancia desde la parte derecha */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    /* Alinea los selectores al final (derecha) */
+}
+
+.selector {
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    background: #f8e015;
+    font-size: 2rem;
+    /* Ajustar el tamaño de la fuente */
+    border-radius: 12px;
+    border: none;
+    appearance: none;
+    background-image: url(../assets/images/drop.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 10px;
+    padding: 10px;
+}
+
+#selectordiempo {
+    width: 100%;
+    /* Puedes hacer este más pequeño o ajustarlo */
+}
+
+.selector:focus {
+    outline: 2px solid #9e5aff;
+    background-color: #fff9c4;
 }
