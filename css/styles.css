@@ -116,7 +116,7 @@ body {
     place-items: center;
     background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
     overflow: hidden;
-    /* Evitar desplazamiento de elementos fuera del contenedor */
+
 }
 
 .container {
@@ -130,11 +130,10 @@ body {
     justify-content: center;
 }
 
-/* Ajustes en pantallas pequeñas */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        /* Cambiar a columna */
     }
 }
 
@@ -152,21 +151,19 @@ body {
     padding: 20px;
 }
 
-/* Ajustes para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .trivia-container {
         grid-template-columns: 1fr;
-        /* Hacer la columna más grande al 100% */
         grid-template-areas:
             "back"
             "main"
             "options";
-        /* Pone los selectores debajo del contenido */
+
     }
 
     .trivia-opciones {
         position: relative;
-        /* Evitar la posición absoluta */
         width: 100%;
         top: 10px;
         left: 0;
@@ -190,9 +187,7 @@ body {
 @media (max-width: 768px) {
     .opcion-retroceder {
         width: 100%;
-        /* Hacer que el botón ocupe todo el ancho */
         text-align: center;
-        /* Asegurar que el texto esté centrado */
         margin-top: 20px;
     }
 }
@@ -275,7 +270,7 @@ body {
     letter-spacing: -4px;
 }
 
-/* Mejoras y estilos adicionales */
+
 .trivia-content {
     margin-top: 20px;
     padding: 10px;
@@ -339,17 +334,12 @@ button {
 
 .trivia-opciones {
     position: absolute;
-    /* Usa posición absoluta para colocarlos donde quieras */
     top: 10px;
-    /* Distancia desde la parte superior */
-    right: 10px;
-    /* Distancia desde la parte derecha */
     width: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-end;
-    /* Alinea los selectores al final (derecha) */
 }
 
 .selector {
@@ -360,7 +350,6 @@ button {
     color: #9e5aff;
     background: #f8e015;
     font-size: 2rem;
-    /* Ajustar el tamaño de la fuente */
     border-radius: 12px;
     border: none;
     appearance: none;
@@ -374,7 +363,6 @@ button {
 
 #selectordiempo {
     width: 100%;
-    /* Puedes hacer este más pequeño o ajustarlo */
 }
 
 .selector:focus {
