@@ -121,19 +121,25 @@ body {
 }
 
 .trivia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 90%;
     height: auto;
     max-height: none;
-    overflow: visible;
+    overflow: none;
+    padding: 10px;
 }
-
 
 
 .trivia-opciones {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     top: 0;
     right: 0;
-    margin: 20px;
+    margin: 10px;
 
 }
 
@@ -176,45 +182,33 @@ body {
 }
 
 .trivia-selected img {
-    width: 100%;
+    width: 80%;
     height: auto;
     max-width: 200px;
     max-height: 200px;
 }
 
-.button-text-selected {
-    font-family: "Bungee", serif;
-    color: #4341bc;
-    font-size: 5dvh;
-    text-decoration: none;
-    letter-spacing: -4px;
+@media (max-width: 600px) {
+    .trivia-selected img {
+        display: none;
+    }
 }
 
-.button-iniciar {
-    height: 18%;
-    width: 28%;
-    cursor: pointer;
-    background: #ff40bd;
-    border: none;
-    border-radius: 20px;
-}
+
+
+
 
 .button-iniciar-juego {
     height: auto;
     width: auto;
-    padding: 15px 30px;
-    background: #ff40bd;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 10px;
+    background: #e90b0b;
+    border-radius: 10px;
+    font-family: "Ranchers", serif;
+    font-size: 20px;
+    color: #f4f4f4;
 }
 
-/* Efecto hover */
-.button-iniciar-juego:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 
 
@@ -233,7 +227,6 @@ body {
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: calc(100% - 12px) center;
-    padding-right: 10px;
     padding: 10px;
 }
 
