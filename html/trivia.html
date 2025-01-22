@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Corregido a español -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,29 +11,31 @@
     <link rel="stylesheet" href="../css/styles2.css">
     <title>Trivia</title>
 </head>
+
 <body class="trivia-body" onload="cargarCategoria()">
     <div class="trivia-container">
         <div class="opcion-retroceder">
-        <button class="button-retroceder"><a href="categorias.html" class="button-text-retroceder">Categorias</a></button>
+            <a href="categorias.html" class="button-retroceder">Categorias</a>
         </div>
         <div class="trivia-opciones">
-        <select name="Dificultad" id="selectordificultad" class="selector">
-        <option value="Facil">Facil</option>
-        <option value="Medio">Medio</option>
-        <option value="Dificil">Dificil</option>
-        </select>
-        <select name="Tiempo" id="selectortiempo" class="selector">
-        <option value=20>20s</option>
-        <option value=60>1m</option>
-        <option value=60>2m</option>
-        </select>
+            <select name="Dificultad" id="selectordificultad" class="selector">
+                <option value="Facil">Fácil</option>
+                <option value="Medio">Medio</option>
+                <option value="Dificil">Difícil</option>
+            </select>
+            <select name="Tiempo" id="selectortiempo" class="selector">
+                <option value=20>20s</option>
+                <option value=40>40s</option>
+                <option value=60>1m</option>
+            </select>
         </div>
         <div class="trivia-selected">
-        <img id="categoriaImagen" src="" alt="Categoría" class="categoria-logo">
-        <span class="categoria-text" id="categoriaNombre"></span>
-        <button class="button-iniciar-juego"><a href="contenido.html" class="button-text-selected">Iniciar</a></button>
+            <img id="categoriaImagen" src="" alt="Icono de categoría seleccionada" class="categoria-logo">
+            <span class="categoria-text" id="categoriaNombre"></span>
+            <button class="button-iniciar-juego" onclick="iniciarJuego()">Iniciar</button>
         </div>
     </div>
-    <script src="../js/guardarcat.js"></script>
+    <script src="/js/trivia.js"></script>
 </body>
+
 </html>
