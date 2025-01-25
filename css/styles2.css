@@ -124,15 +124,13 @@
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 5px;
 }
 
 .button-text-selected {
     font-family: "Bungee", serif;
     color: #41bca8;
-    height: 100%;
-    width: 25%;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
     justify-content: center;
     align-items: center;
