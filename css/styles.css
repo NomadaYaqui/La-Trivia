@@ -138,6 +138,7 @@ body {
     place-items: center;
     background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
 }
+
 .trivia-container {
     width: 90%;
     height: 80%;
@@ -153,12 +154,13 @@ body {
     padding: 20px;
 }
 
-.opcion-retroceder{
+.opcion-retroceder {
     grid-area: back;
     width: auto;
     height: 20%;
     border-radius: 10px;
 }
+
 .trivia-opciones {
     grid-area: options;
     display: flex;
@@ -184,10 +186,14 @@ body {
 }
 
 .trivia-selected img {
-    width: 100%;  /* Ajusta la imagen al 100% del contenedor */
-    height: auto;  /* Mantiene la relación de aspecto */
-    max-width: 200px;  /* Limita el tamaño máximo */
-    max-height: 200px;  /* Limita el tamaño máximo */
+    width: 100%;
+    /* Ajusta la imagen al 100% del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    max-width: 200px;
+    /* Limita el tamaño máximo */
+    max-height: 200px;
+    /* Limita el tamaño máximo */
 }
 
 .button-text-selected {
@@ -217,5 +223,3 @@ body {
     border-radius: 20px;
     letter-spacing: -4px;
 }
-/*background: linear-gradient(180deg, rgba(249,224,20,1) 35%, rgba(65,188,168,1) 100%);*/
-/* background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,240,45,1) 68%); */
