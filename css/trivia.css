@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    background-size: 100% 100%;
+    background-position: center;
+    align-items: center;
+    place-items: center;
+}
+
+
+
+.trivia-body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
+}
+
+.trivia-container {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+        "back options"
+        "main main";
+    grid-template-columns: 25% auto;
+    grid-template-rows: 25% 55%;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+.opcion-retroceder {
+    grid-area: back;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.button-retroceder {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text-retroceder {
+    font-family: "Ranchers", serif;
+    text-decoration: none;
+    font-size: 3vw;
+    color: #9e5aff;
+
+}
+
+.trivia-opciones {
+    grid-area: options;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: right;
+    align-content: center;
+    /* width: auto; */
+    height: 25%;
+    width: 25%;
+    justify-self: end;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+
+.trivia-selected {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+
+
+
+.trivia-selected img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+
+.button-text-selected {
+    font-family: "Bungee", serif;
+    color: #41bca8;
+    font-size: 4vw;
+    text-decoration: none;
+    letter-spacing: -4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.button-iniciar-juego {
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+    background: #ff40bd;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: "Bungee", sans-serif;
+}
+
+/* .button-options {
+    cursor: pointer;
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    background: #f8e015;
+    font-size: 4vw;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: -4px;
+} */
+
+.selector {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    background: #f8e015;
+    font-size: 3vw;
+    border-radius: 12px;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../assets/images/drop.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 10px;
+
+
+}
+
+#selectortiempo {
+    width: 70%;
+}
+
+.selector:focus {
+    border: none;
+}
