@@ -96,7 +96,7 @@ const preguntas = {
             }
         ]
     },
-    Deporte: {
+    Deportes: {
         Facil: [
             {
                 pregunta: "¿En qué deporte se utiliza una raqueta?",
