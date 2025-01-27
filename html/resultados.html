@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contenido.css">
+    <title>Resultados</title>
+</head>
+
+<body>
+    <div class="resultados-container">
+        <h1>¡Juego Terminado! 🎮</h1>
+        <div id="puntuacion-final" class="puntuacion-final"></div>
+        <div class="botones-resultados">
+            <button onclick="window.location.href='contenido.html'" class="button-reiniciar">Jugar de nuevo</button>
+            <button onclick="window.location.href='categorias.html'" class="button-categorias">Elegir otra
+                categoría</button>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar puntuación al cargar la página
+        window.onload = function () {
+            const puntuacion = sessionStorage.getItem("puntuacionFinal");
+            if (puntuacion !== null) {
+                document.getElementById("puntuacion-final").textContent = `Aciertos: ${puntuacion}`;
+            } else {
+                window.location.href = "categorias.html"; // Redirige si no hay puntuación
+            }
+        };
+    </script>
+</body>
+
+</html>
