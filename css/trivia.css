@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 
@@ -26,7 +27,7 @@ body {
 
 
 .trivia-container {
-    width: 90%;
+    width: 85%;
     height: 80%;
     display: grid;
     grid-template-areas:
@@ -78,15 +79,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     height: 25%;
     width: 25%;
     justify-self: end;
     border-radius: 10px;
     gap: 10px;
     position: relative;
-    top: 30%;
+    /* top: 10%; */
 
+}
+
+@media (max-width: 768px) {
+    .trivia-opciones {
+        top: 10%;
+        width: 40%;
+        height: auto;
+
+        /* gap: 4px; */
+    }
+
+    .selector {
+        font-size: 3.5vw;
+        padding: 8px;
+    }
+
+    .categoria-text {
+        font-size: 8vw;
+    }
+
+
+    .button-iniciar-juego {
+        width: 30%;
+        font-size: 5vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trivia-opciones {
+        top: 10%;
+        width: 50%;
+        gap: 5px;
+    }
+
+    .selector {
+        font-size: 4.5vw;
+        padding: 10px;
+    }
+
+    .button-iniciar-juego {
+        width: 50%;
+        font-size: 6vw;
+        padding: 10px;
+    }
 }
 
 .trivia-selected {
@@ -126,49 +172,37 @@ body {
 
 }
 
+
+.button-iniciar-juego {
+    height: auto;
+    width: auto;
+    font-family: "Ranchers", serif;
+    cursor: pointer;
+    background: #e955b0;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 3vw;
+    color: #ffffff;
+
+}
+
+.button-iniciar-juego:hover {
+    background-color: #ff6fcf;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
 @media (max-width: 768px) {
     .categoria-text {
         font-size: 8vw;
 
     }
 }
-
-.button-iniciar-juego {
-    height: auto;
-    width: 25%;
-    font-family: "Bungee", sans-serif;
-    cursor: pointer;
-    background: #41bca8;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    font-size: 3vw;
-    color: #ffffff;
-
-}
-
-
-
-@media (max-width: 768px) {
-    .button-iniciar-juego {
-        width: 50%;
-        font-size: 4vw;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .button-iniciar-juego {
-        width: 70%;
-        font-size: 5vw;
-        padding: 20px;
-    }
-}
-
-
 
 .selector {
     width: 100%;
@@ -189,7 +223,6 @@ body {
     background-position: calc(100% - 12px) center;
     padding-right: 15px;
 }
-
 
 #selectortiempo {
     width: 70%;

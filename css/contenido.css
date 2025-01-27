@@ -90,8 +90,9 @@ body {
 
 #pregunta {
     font-size: 1.5em;
+    font-family: 'Ranchers', sans-serif;
     margin: 20px;
-    color: #2c3e50;
+    color: #125988;
     text-align: center;
 }
 
@@ -102,10 +103,11 @@ body {
     margin: 20px;
 }
 
+/* #3498db */
 .opcion {
     padding: 15px;
-    background-color: #3498db;
-    color: white;
+    background-color: white;
+    color: #125988;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -132,4 +134,5 @@ body {
     font-size: 1.5em;
     color: #2c3e50;
     margin-top: 20px;
+    font-family: 'Bungee', sans-serif;
 }
