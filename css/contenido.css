@@ -1,4 +1,12 @@
 /* Estilos generales para el contenido de las categorías */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 .categoria-contenido {
     display: block;
     text-align: center;
@@ -64,4 +72,95 @@
     .categoria-contenido li {
         font-size: 1.1rem;
     }
+}
+
+/* Aca viene lo nuevo y modificable */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#temporizador {
+    font-size: 2.5em;
+    font-family: 'Bungee', sans-serif;
+    color: #e74c3c;
+    margin: 20px 0;
+}
+
+#pregunta {
+    font-size: 1.5em;
+    margin: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.opcion {
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Ranchers', sans-serif;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.opcion:hover {
+    transform: scale(1.05);
+}
+
+.opcion.correcta {
+    background-color: #2ecc71 !important;
+    border: 2px solid #27ae60 !important;
+}
+
+.opcion.incorrecta {
+    background-color: #e74c3c !important;
+    border: 2px solid #c0392b !important;
+}
+
+#puntuacion {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.resultados-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.puntuacion-final {
+    font-size: 3em;
+    color: #2ecc71;
+    margin: 20px 0;
+    font-family: 'Bungee', sans-serif;
+}
+
+.botones-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.button-reiniciar {
+    background-color: #3498db !important;
+}
+
+.button-categorias {
+    background-color: #9b59b6 !important;
 }
