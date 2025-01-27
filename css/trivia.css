@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     margin: 0;
     height: 100vh;
     background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
     background-size: 100% 100%;
     background-position: center;
-    align-items: center;
-    place-items: center;
 }
 
 
@@ -23,6 +23,7 @@ body {
     place-items: center;
     background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
 }
+
 
 .trivia-container {
     width: 90%;
@@ -39,49 +40,54 @@ body {
     padding: 20px;
 }
 
+
 .opcion-retroceder {
     grid-area: back;
     width: 100%;
     height: 20%;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 }
 
+
+
 .button-retroceder {
-    cursor: pointer;
-    background: none;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
+    all: unset;
+    display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
+
+
 
 .button-text-retroceder {
     font-family: "Ranchers", serif;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 4.8vw;
     color: #9e5aff;
 
 }
+
 
 .trivia-opciones {
     grid-area: options;
     display: flex;
     flex-direction: column;
-    align-items: self-end;
-    justify-content: right;
-    align-content: center;
-    /* width: auto; */
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 25%;
     width: 25%;
     justify-self: end;
     border-radius: 10px;
     gap: 10px;
+    position: relative;
+    top: 30%;
+
 }
-
-
 
 .trivia-selected {
     grid-area: main;
@@ -96,8 +102,6 @@ body {
 }
 
 
-
-
 .trivia-selected img {
     width: 100%;
     height: auto;
@@ -106,42 +110,65 @@ body {
 }
 
 
-
 .button-text-selected {
     font-family: "Bungee", serif;
     color: #41bca8;
     font-size: 4vw;
     text-decoration: none;
     letter-spacing: -4px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
-
-.button-iniciar-juego {
-    height: 100%;
-    width: 25%;
-    cursor: pointer;
-    background: #ff40bd;
-    border: none;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    font-family: "Bungee", sans-serif;
-}
-
-/* .button-options {
-    cursor: pointer;
+.categoria-text {
     font-family: "Ranchers", serif;
     color: #9e5aff;
-    background: #f8e015;
-    font-size: 4vw;
+    font-size: 6vw;
+
+}
+
+@media (max-width: 768px) {
+    .categoria-text {
+        font-size: 8vw;
+
+    }
+}
+
+.button-iniciar-juego {
+    height: auto;
+    width: 25%;
+    font-family: "Bungee", sans-serif;
+    cursor: pointer;
+    background: #41bca8;
     border: none;
     border-radius: 20px;
-    letter-spacing: -4px;
-} */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 3vw;
+    color: #ffffff;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .button-iniciar-juego {
+        width: 50%;
+        font-size: 4vw;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-iniciar-juego {
+        width: 70%;
+        font-size: 5vw;
+        padding: 20px;
+    }
+}
+
+
 
 .selector {
     width: 100%;
@@ -150,20 +177,19 @@ body {
     font-family: "Ranchers", serif;
     color: #9e5aff;
     background: #f8e015;
-    font-size: 3vw;
+    font-size: 4vw;
     border-radius: 12px;
     border: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     background-image: url(../assets/images/drop.png);
-    background-size: 20%;
+    background-size: 12%;
     background-repeat: no-repeat;
     background-position: calc(100% - 12px) center;
-    padding-right: 10px;
-
-
+    padding-right: 15px;
 }
+
 
 #selectortiempo {
     width: 70%;

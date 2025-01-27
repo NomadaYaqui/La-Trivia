@@ -7,12 +7,20 @@
 
 }
 
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .categoria-contenido {
     display: block;
     text-align: center;
     padding: 2vw 4vw;
     background: rgba(255, 255, 255, 0.9);
-    /* Fondo blanco con algo de transparencia */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
@@ -38,10 +46,6 @@
 }
 
 /* Estilo para las opciones de respuestas */
-.categoria-contenido ul {
-    list-style: none;
-    padding: 0;
-}
 
 .categoria-contenido li {
     background: #41bca8;
@@ -76,12 +80,6 @@
 
 /* Aca viene lo nuevo y modificable */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
 
 #temporizador {
     font-size: 2.5em;
@@ -134,33 +132,4 @@
     font-size: 1.5em;
     color: #2c3e50;
     margin-top: 20px;
-}
-
-.resultados-container {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.puntuacion-final {
-    font-size: 3em;
-    color: #2ecc71;
-    margin: 20px 0;
-    font-family: 'Bungee', sans-serif;
-}
-
-.botones-resultados {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-.button-reiniciar {
-    background-color: #3498db !important;
-}
-
-.button-categorias {
-    background-color: #9b59b6 !important;
 }
