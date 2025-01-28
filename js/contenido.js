@@ -998,21 +998,7 @@ const preguntas = {
 
 
 };
-// Cargar configuración al iniciar
-function cargarConfiguracion() {
-    const dificultad = sessionStorage.getItem("dificultad");
-    const tiempo = sessionStorage.getItem("tiempo");
-    const categoria = sessionStorage.getItem("categoriaNombre");
 
-    if (!dificultad || !tiempo || !categoria) {
-        alert("Configuración incompleta. Redirigiendo...");
-        window.location.href = "trivia.html";
-        return;
-    }
-
-    iniciarTemporizador(parseInt(tiempo));
-    mostrarPreguntas(categoria, dificultad);
-}
 
 // Temporizador
 function iniciarTemporizador(segundos) {
@@ -1086,3 +1072,27 @@ function terminarJuego() {
     sessionStorage.setItem("puntuacionFinal", puntuacion);
     window.location.href = "resultados.html";
 }
+
+// Cargar configuración al iniciar
+function cargarConfiguracion() {
+    const dificultad = sessionStorage.getItem("dificultad");
+    const tiempo = sessionStorage.getItem("tiempo");
+    const categoria = sessionStorage.getItem("categoriaNombre");
+
+    if (!dificultad || !tiempo || !categoria) {
+        alert("Configuración incompleta. Redirigiendo...");
+        window.location.href = "trivia.html";
+        return;
+    }
+
+    iniciarTemporizador(parseInt(tiempo));
+    mostrarPreguntas(categoria, dificultad);
+}
+
+
+
+
+
+
+
+
