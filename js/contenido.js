@@ -372,7 +372,7 @@ function verificarRespuesta(opcionSeleccionada, respuestaCorrecta) {
             sessionStorage.getItem("categoriaNombre"),
             sessionStorage.getItem("dificultad")
         );
-    }, 1500);
+    }, 1100);
 }
 
 // Terminar juego
