@@ -56,7 +56,7 @@ body {
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    background: linear-gradient(to top,  #ffaa2b  50%, #5345ff 50%);
     display: flex;
     align-items: center;
     justify-content: center;

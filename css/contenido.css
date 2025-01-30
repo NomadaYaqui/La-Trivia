@@ -7,10 +7,11 @@
 
 }
 
+
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    background: linear-gradient(to top, #ffaa2b 50%, #5345ff  50%); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +32,7 @@ body {
 /* Estilo para los títulos de las categorías */
 .categoria-contenido h2 {
     font-family: "Bungee", sans-serif;
-    color: #f9e014;
+    color: #3ba38d;
     text-shadow: 1px 1px 2px #41bca8;
     font-size: 2.5vw;
     margin-bottom: 1rem;
@@ -41,7 +42,7 @@ body {
 .categoria-contenido p {
     font-size: 1.2rem;
     font-family: "Ranchers", sans-serif;
-    color: #333;
+    color: #d5c3f8;
     margin-bottom: 2rem;
 }
 
@@ -92,7 +93,7 @@ body {
     font-size: 1.5em;
     font-family: 'Ranchers', sans-serif;
     margin: 20px;
-    color: #125988;
+    color: #e3ebf1;
     text-align: center;
 }
 

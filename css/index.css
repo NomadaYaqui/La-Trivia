@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    background: linear-gradient(to top,  #ffaa2b  50%, #5345ff 50%);
 }
 
 
@@ -46,7 +46,7 @@ body {
 
 .button-text {
     font-family: "Bungee", serif;
-    color: #f9e014;
+    color: #faf9f5;
     font-size: 3rem;
     text-decoration: none;
     -webkit-text-stroke: 0.1rem #000;
