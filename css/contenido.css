@@ -1,5 +1,3 @@
-/* Estilos generales para el contenido de las categorías */
-
 * {
     padding: 0;
     margin: 0;
@@ -16,70 +14,12 @@ body {
     justify-content: center;
 }
 
-.categoria-contenido {
-    display: block;
-    text-align: center;
-    padding: 2vw 4vw;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    width: 80%;
-    max-width: 900px;
+.juego-container {
+    background: rgba(65, 188, 168, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+
 }
-
-/* Estilo para los títulos de las categorías */
-.categoria-contenido h2 {
-    font-family: "Bungee", sans-serif;
-    color: #f9e014;
-    text-shadow: 1px 1px 2px #41bca8;
-    font-size: 2.5vw;
-    margin-bottom: 1rem;
-}
-
-/* Estilo para las preguntas */
-.categoria-contenido p {
-    font-size: 1.2rem;
-    font-family: "Ranchers", sans-serif;
-    color: #333;
-    margin-bottom: 2rem;
-}
-
-/* Estilo para las opciones de respuestas */
-
-.categoria-contenido li {
-    background: #41bca8;
-    color: #fff;
-    margin: 0.8rem 0;
-    padding: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.categoria-contenido li:hover {
-    background-color: #f9e014;
-    transform: scale(1.05);
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .categoria-contenido h2 {
-        font-size: 5vw;
-    }
-
-    .categoria-contenido p {
-        font-size: 1.5rem;
-    }
-
-    .categoria-contenido li {
-        font-size: 1.1rem;
-    }
-}
-
-/* Aca viene lo nuevo y modificable */
-
 
 #temporizador {
     font-size: 2.5em;
@@ -103,10 +43,10 @@ body {
     margin: 20px;
 }
 
-/* #3498db */
+
 .opcion {
     padding: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #125988;
     border: none;
     border-radius: 8px;
