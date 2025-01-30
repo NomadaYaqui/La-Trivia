@@ -1,10 +1,26 @@
 /* Estilos generales para el contenido de las categorías */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .categoria-contenido {
     display: block;
     text-align: center;
     padding: 2vw 4vw;
     background: rgba(255, 255, 255, 0.9);
-    /* Fondo blanco con algo de transparencia */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
@@ -30,10 +46,6 @@
 }
 
 /* Estilo para las opciones de respuestas */
-.categoria-contenido ul {
-    list-style: none;
-    padding: 0;
-}
 
 .categoria-contenido li {
     background: #41bca8;
@@ -64,4 +76,63 @@
     .categoria-contenido li {
         font-size: 1.1rem;
     }
+}
+
+/* Aca viene lo nuevo y modificable */
+
+
+#temporizador {
+    font-size: 2.5em;
+    font-family: 'Bungee', sans-serif;
+    color: #125988;
+    margin: 20px 0;
+}
+
+#pregunta {
+    font-size: 1.5em;
+    font-family: 'Ranchers', sans-serif;
+    margin: 20px;
+    color: #125988;
+    text-align: center;
+}
+
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* #3498db */
+.opcion {
+    padding: 15px;
+    background-color: white;
+    color: #125988;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Ranchers', sans-serif;
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+
+.opcion:hover {
+    transform: scale(1.05);
+}
+
+.opcion.correcta {
+    background-color: #2ecc71 !important;
+    border: 2px solid #27ae60 !important;
+}
+
+.opcion.incorrecta {
+    background-color: #e74c3c !important;
+    border: 2px solid #c0392b !important;
+}
+
+#puntuacion {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+    font-family: 'Bungee', sans-serif;
 }
