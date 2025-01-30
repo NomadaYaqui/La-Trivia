@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #f9e014 50%, #41bca8 50%);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+
+.trivia-body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
+}
+
+
+.trivia-container {
+    width: 85%;
+    height: 80%;
+    display: grid;
+    grid-template-areas:
+        "back options"
+        "main main";
+    grid-template-columns: 25% auto;
+    grid-template-rows: 25% 55%;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+
+.opcion-retroceder {
+    grid-area: back;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+.button-retroceder {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+
+.button-text-retroceder {
+    font-family: "Ranchers", serif;
+    text-decoration: none;
+    font-size: 4.8vw;
+    color: #9e5aff;
+
+}
+
+
+.trivia-opciones {
+    grid-area: options;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 25%;
+    width: 25%;
+    justify-self: end;
+    border-radius: 10px;
+    gap: 10px;
+    position: relative;
+    /* top: 10%; */
+
+}
+
+@media (max-width: 768px) {
+    .trivia-opciones {
+        top: 10%;
+        width: 40%;
+        height: auto;
+
+        /* gap: 4px; */
+    }
+
+    .selector {
+        font-size: 3.5vw;
+        padding: 8px;
+    }
+
+    .categoria-text {
+        font-size: 8vw;
+    }
+
+
+    .button-iniciar-juego {
+        width: 30%;
+        font-size: 5vw;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trivia-opciones {
+        top: 10%;
+        width: 50%;
+        gap: 5px;
+    }
+
+    .selector {
+        font-size: 4.5vw;
+        padding: 10px;
+    }
+
+    .button-iniciar-juego {
+        width: 50%;
+        font-size: 6vw;
+        padding: 10px;
+    }
+}
+
+.trivia-selected {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+
+.trivia-selected img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.button-text-selected {
+    font-family: "Bungee", serif;
+    color: #41bca8;
+    font-size: 4vw;
+    text-decoration: none;
+    letter-spacing: -4px;
+    text-align: center;
+}
+
+.categoria-text {
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    font-size: 6vw;
+
+}
+
+
+.button-iniciar-juego {
+    height: auto;
+    width: auto;
+    font-family: "Ranchers", serif;
+    cursor: pointer;
+    background: #e955b0;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 3vw;
+    color: #ffffff;
+
+}
+
+.button-iniciar-juego:hover {
+    background-color: #ff6fcf;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .categoria-text {
+        font-size: 8vw;
+
+    }
+}
+
+.selector {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Ranchers", serif;
+    color: #9e5aff;
+    background: #f8e015;
+    font-size: 4vw;
+    border-radius: 12px;
+    border: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../assets/images/drop.png);
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+    padding-right: 15px;
+}
+
+#selectortiempo {
+    width: 70%;
+}
+
+.selector:focus {
+    border: none;
+}
