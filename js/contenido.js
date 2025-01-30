@@ -6,7 +6,7 @@ let puntuacion = 0;
 
 // Datos de la trivia!!
 const preguntas = {
-    Películas: {
+    Peliculas: {
         Facil: [
             {
                 pregunta: "¿Quién dirigió 'El Padrino'?",
@@ -223,7 +223,7 @@ const preguntas = {
         ]
     },
 
-    Música: {
+    Musica: {
         Facil: [
             {
                 pregunta: "¿Quién cantó la famosa canción 'Shape of You'?",
