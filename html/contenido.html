@@ -12,8 +12,9 @@
 
 </head>
 <!-- Llama a cargarConfiguracion() al cargar la página -->
+<!-- onload="cargarConfiguracion()" -->
 
-<body onload="cargarConfiguracion()">
+<body>
     <div class="juego-container">
         <!-- Temporizador -->
         <div id="temporizador">00:00</div>
@@ -28,8 +29,9 @@
         <div id="puntuacion">Aciertos: 0</div>
     </div>
 
-    <!-- Enlaza contenido.js al final del body -->
-    <script src="/js/contenido.js"></script>
+    <!-- Aquí se carga el script de datos como módulo -->
+    <script type="module" src="/js/datos.js"></script>
+    <script type="module" src="/js/contenido.js"></script>
 </body>
 
 
