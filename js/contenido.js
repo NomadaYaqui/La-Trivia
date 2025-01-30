@@ -1104,7 +1104,7 @@ function verificarRespuesta(opcionSeleccionada, respuestaCorrecta) {
             sessionStorage.getItem("categoriaNombre"),
             sessionStorage.getItem("dificultad")
         );
-    }, 1100);
+    }, 1500);
 }
 
 
